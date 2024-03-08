@@ -2,10 +2,14 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, GatewayIntentBits, Events, ActivityType } = require('discord.js');
 const { token } = require('./config.json');
-
+const { ShardingManager } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const manager = new ShardingManager('./bot.js', { token: token });
 
 
+manager.on('shardCreate', shard => console.log(`Launched shard ${shard.id}`));
+
+manager.spawn();
 
 client.commands = new Collection();
 const foldersPath = path.join(__dirname, 'commands');
