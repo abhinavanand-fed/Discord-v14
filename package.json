@@ -5,12 +5,21 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon deploy-commands.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "monit": "pm2 start index.js --watch --name 4dc && pm2 monit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.14.1"
+    "@discordjs/builders": "^0.9.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.8.0",
+    "console-stamp": "^3.1.2",
+    "discord-api-types": "^0.37.73",
+    "discord.js": "^14.14.1",
+    "glob": "^7.2.0",
+    "pm2": "^5.1.2",
+    "uuid": "^9.0.1"
   }
 }
