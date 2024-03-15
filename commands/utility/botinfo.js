@@ -29,8 +29,8 @@ const {
   
       embed
         .setAuthor({
-          name: 'D3 Developments',
-          iconURL: 'https://avatars.githubusercontent.com/u/95593009?v=4'
+          name: 'Abhinav',
+          iconURL: 'https://cdn.discordapp.com/avatars/492262016644284429/1e72dab90efc53741d71d0e89faddd27.webp?size=4096'
         })
         .setTitle('Bot Information')
         .setColor('Green')
