@@ -91,3 +91,7 @@ module.exports = {
     await sendPaginatedBanList(interaction);
   },
 };
+
+
+
+//There should be only one function to check the number of pages. So, there should be only a (data) argument passed to it and it should return an array for the execution, and there shouldn't be any other way of doing it 
