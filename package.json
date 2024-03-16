@@ -20,6 +20,7 @@
     "discord-api-types": "^0.37.73",
     "discord-arts": "^0.5.8",
     "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
     "glob": "^7.2.0",
     "pm2": "^5.1.2",
     "uuid": "^9.0.1"
