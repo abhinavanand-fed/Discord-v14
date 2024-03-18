@@ -25,7 +25,7 @@ module.exports = {
                 .setRequired(false)
         ),
 
-    run: async ({ interaction }) => {
+    async execute(interaction) {
         const { options, member } = interaction;
 
         const target = options.getMember('target');
