@@ -23,7 +23,7 @@ module.exports = {
                 .setRequired(false)
         ),
 
-    run: async ({ interaction }) => {
+    async execute(interaction) {
         const { options, guild, member } = interaction;
 
         const id = options.getString('id');
